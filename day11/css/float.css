@@ -1,0 +1,20 @@
+/* float 속성 */
+h1, p, ul{margin: 0; padding: 0;}
+li{list-style: none;}
+.gallery li{
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    text-align: center;
+}
+.gallery h3{padding: 5px;}
+.gallery li h3{background: #daa;}
+.gallery li + li h3 {background: #abc;}
+.gallery li + li + li h3 {background: #eba;}
+.gallery li + li + li + li h3 {background: #aa7;}
+
+
+.gallery li p{
+    text-align: justify; /*텍스트 양쪽 정렬*/
+    padding: 10px;
+} 

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tansfotm: rotate 예제</title>
+    <style>
+        div{
+            width: 200px;
+            border: 5px solid lightgreen;
+            padding: 10px;
+           
+        }
+        .box1{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        div.box1:hover{
+            /* 크롬 브라우저 지원 접두사(prefix) */
+            -webkit-transform: rotate(-90deg);
+            /* 인터넷 익스플로러 지원 */
+            -ms-transform: rotate(-90deg);
+            /* 파이어폭스 브라우저 지원 */
+            -moz-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+        .box2{
+            position: absolute;
+            top: 300px;
+            left: 300px;
+        }
+        .box2:hover{
+            -webkit-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>Mouse Over</h1>
+    </div>
+    <div class="box2">
+        <h1>Mouse Over</h1>
+    </div>
+</body>
+</html>

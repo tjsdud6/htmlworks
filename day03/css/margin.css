@@ -1,0 +1,15 @@
+div{width: 200px;
+    height: 100px;
+    border: 3px solid #333;
+}
+#box1{
+    margin: 30px;
+    /* 다 같을때는 1번만 쓰기 top > right > bottom > left */
+}
+#box2{
+    margin: 50px 50px 30px 30px
+    /* 30 50 30 50 반복 */
+}
+#box3{
+    margin: 30px 50px
+}

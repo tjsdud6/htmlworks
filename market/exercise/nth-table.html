@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 문제</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 600px;
+        }
+        table, td{
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        td:first-child, td:nth-child(3){
+            background-color: #ccc;
+            font-weight: bolder;
+        }
+        tr:first-child td:nth-child(2n+1){
+            width: 100px;
+        }
+        tr:first-child td:first-child{
+            width: 100px;
+        }
+        td[colspan="3"]{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>이 름</td>
+            <td></td>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>주 소</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>자기소개</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+

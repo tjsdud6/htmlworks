@@ -1,0 +1,60 @@
+/* 모바일 기준 780px 미만 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{width: 100%; margin: 0 auto;}
+
+/* header 영역 */
+/* header{width: 100%; height: 300px;} */
+nav{width: 100%; height: 60px; background: #000;
+    position: fixed; top: 0;}
+#main-nav{list-style: none; text-align: center;}
+#main-nav li{display: inline-block; margin: 15px;}
+#main-nav li a{text-decoration: none; color: #fff;}
+#main-nav li a:hover{color: yellowgreen ;}
+#main-pic img{width: 100%; height: 240px;}
+
+/* section 스타일 */
+section{height: 350px; padding: 0 4%;}
+section:nth-child(2n+1){background: #eee;}
+section .page-title{margin-top: 30px;}
+section .content{margin: 10px auto; padding: 10px;}
+section .photo{display: none;}
+section p, h2, li{line-height: 2;}
+#choice ol{padding-left: 30px;}
+#choice h1, #map h1{padding-top: 20px;}
+
+
+/* footer 스타일 */
+footer{height: 200px; border-top: 2px solid #222;}
+#bottomMenu{list-style: none; margin: 10px 10px 10px 40px;}
+#bottomMenu li{display: inline-block; margin: 10px 0;
+       border-right: 1px solid #ccc; padding: 0 10px;}
+#bottomMenu li:last-child{border: none;}
+#bottomMenu li a{text-decoration: none; color: #444;}
+address{padding-left: 50px; font: 15px normal; color: #222;
+        line-height: 2;}
+
+/* 태블릿 기준 */
+@media screen and (min-width: 780px){
+    /* header{width: 100%; height: 320px;} */
+    nav{position: fixed; top:0;}
+    section{height: 400px;}
+    #intro, #choice{width: 50%; float: left;}
+    #map{clear:both;}
+    #main-pic img{width: 100%; height: 260px;}
+}
+
+/* PC 기준 */
+@media screen and (min-width: 1000px) {
+    #container{width: 1000px; margin: 0 auto;}
+    /* header{width: 1000px; height: 350px;} */
+    nav{width: 1000px;}
+    #main-pic img{width: 100%; height: 280px;}
+    section{height: 350px;}
+    section img{border-radius: 5px;}
+    #intro, #choice, #map{width: 100%;}
+    section .photo{display: block;}
+    #intro .photo, #map .photo{float: left; margin-right: 20px;}
+    #map .photo{border: 1px solid #ccc; border-radius: 5px;}
+    #choice .photo{float: right; margin-left: 10px;}
+    #map h1{padding-top: 15px;}
+}

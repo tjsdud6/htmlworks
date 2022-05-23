@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxsizing 속성</title>
+    <style>
+        div{
+            width: 300px;
+            height: 150px;
+            border: 2px solid rgb(200, 118, 238);
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+        .box1{
+            /* width의 값이 테두리와 패딩을 제외한 값이 됨 */
+
+            box-sizing: content-box;
+        }
+        .box2{
+            /* width의 값이 테두리와 패딩을 합한 값이 됨 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

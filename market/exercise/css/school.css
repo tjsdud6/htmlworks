@@ -1,0 +1,17 @@
+table, th, td{
+    border: 3px solid rgb(138, 138, 240);
+    text-align: center;
+    border-collapse: collapse;
+    /* caption-side: top; /* 캡션의 내용을 밑으로 내림 */
+}
+th,td{
+    width: 150px;
+    height: 40px;
+}
+.color{
+    background-color: #eee;
+}
+caption{
+    margin: 10px;
+    font-size: 17px;
+}

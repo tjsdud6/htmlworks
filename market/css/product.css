@@ -1,0 +1,30 @@
+#container{
+    width: 800px;
+    margin: 10px auto;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+/* 메뉴 스타일 */
+nav a{
+    text-decoration: none;
+    color: #000;
+}table{
+    border: 3px solid #016801;
+    border-collapse: collapse;
+    width: 500px;
+    height: 80px;
+}
+th, td{
+    border: 1px solid #016801;
+    text-align: center;
+}
+
+/* 로그인 스타일 */
+.tbl_login{
+    width: 300px;
+}
+.tbl_login td{
+    width: 150px;
+    height: 20px;
+}

@@ -1,0 +1,11 @@
+/* 외부 스타일 */
+body{background-color: yellowgreen;}
+h2{
+    /* 글자색(이라서 font가 없음) */
+    color: rgb(111, 111, 252);
+    }
+p{
+    font-size: 18px; /* 글씨 크기 */
+    font-family: "바탕체"; /* 글꼴 */
+    color: #ff0000;
+}

@@ -1,0 +1,12 @@
+ul li{
+    /* list-style-type: circle; */
+    /* 불릿 제거 */
+    /* list-style: none; */ 
+    list-style-image: url("../images/dot.png");
+}
+
+ol li{
+    /* list-style: upper-alpha; (대문자) */
+    /* list-style: lower-alpha; (소문자) */
+    list-style: lower-roman;
+}

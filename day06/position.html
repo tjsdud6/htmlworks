@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 속성</title>
+    <style>
+        .rect1{
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            background: #ff0;
+            position: relative; /* 도형 기준(=도형이 부모) */
+        }
+        .rect2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rect1">
+        <div class=" rect2"></div>
+    </div>
+</body>
+</html>

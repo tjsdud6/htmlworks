@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표의 셀 병합</title>
+    <style>
+        table, td{
+            border: 1px solid #ccc;
+            margin: 20px;
+        }
+        td{
+            width: 100px; 
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+   
+        <!-- 2행 3열의 표 : 행합치기 -->
+        <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        </table>
+        <tr>
+            <td colspan="3"></td>
+
+        <!-- 2행 3열의 표 : 행합치기 -->
+        <table>
+         <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+                <tr>
+                    <td></td>
+                    <td></td> 
+                </tr>
+    </table>
+</body>
+</html>

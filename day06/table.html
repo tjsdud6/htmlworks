@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid #000;
+        }
+        thead{background: #eee;}
+        .c1{background-color: #ccc;}
+    </style>
+</head>
+<body>
+    <table><!--표 정의-->
+        <colgroup>
+        <!-- <col style="background: #ccc"> -->
+        <col class="c1">
+      </colgroup>
+        <caption>웹 퍼블리싱 점수</caption>
+        <thead>
+            <tr> <!--1행-->
+                <th>교과목</th><!--1행 1열-->
+                <th>점수</th><!--1행 2열-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!--2행-->
+                <th>HTML</th><!--2행 1열-->
+                <td rowspan="2">93</td><!--2행 2열-->
+            </tr>
+            <tr><!--3행-->
+                <th>CSS</th><!--3행 1열-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr><!--4행-->
+                <th>평균</th><!--4행 1열-->
+                <td>92.5</td><!--4행 2열-->
+            </tr>
+            <tr>
+                <th colspan="2">비고(셀합치기)</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

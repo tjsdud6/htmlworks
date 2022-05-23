@@ -1,0 +1,12 @@
+div{
+    width: 500px;
+    border: 1px solid blue;
+    line-height: 1.5em;
+    background: rgba(8, 8, 221, 0.2);
+    padding: 10px;
+    margin: 20px auto;
+}
+.container:hover{
+    background: #00f;
+    color: #fff;
+}

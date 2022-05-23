@@ -1,0 +1,16 @@
+*{margin: 0 auto;}
+#contents{
+    width: 650px;
+    height: 450px;
+    margin: 50px auto;
+    background:url('../images/bg.jpg') no-repeat;
+    position: relative;}
+
+    #contents h1{
+        font-size: 100px;
+        color: white;
+        text-shadow: 3px 3px #000;
+        position: absolute;
+        right: 50px;
+        bottom: 100px;
+    }

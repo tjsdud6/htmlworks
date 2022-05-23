@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼</title>
+</head>
+<body>
+    <h2>로그인</h2>
+    <!-- method는 생략할 수 없음 -->
+    <form action="loginProcess.jsp" method="post">
+        <!-- 정보를 기재할때 도메인에서 보안처리 할 때는 post, 나올때는 get  -->
+        <p>
+            <label>아이디 :</label>
+            <input type="text" name="id" size="10">
+        </p>
+        <p>
+            <label>비밀번호 :</label>
+            <input type="password" name="password" size="20">
+            <!-- name은 변경 해도 되지만 type은 변경 하면 안됨 -->
+            <!-- 비밀번호는 다른 사람이 보면 안되니까 password 로 설정 -->
+        </p>
+        <input type="submit" value="로그인">
+    </form>
+</body>
+</html>

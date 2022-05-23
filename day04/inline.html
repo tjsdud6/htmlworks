@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>인라인 레벨 요소</title>
+    <style>
+        #container{
+            /* display: block; */
+            /* 수직 배치 : block */
+            /* 수평 배치 : inline */
+            width: 400px;
+            display: flex;
+            flex: wrap;
+            /* 교차측으로 아래로 배치 됨 */
+            /* flex-direction: column;
+            align-items: baseline; */
+        }
+        /* .box{
+            width: 1000px;
+        } */
+        /* .pic{display: none;} */
+        /* 사진 없앨 때는 display : none 근데 block으로 다시 보이게 하면 수직정렬로 바뀌니까 
+                                그냥 주석처리로 하는게 좋음! */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+        <img src="./images/bear.jpg">
+        <img src="./images/cat.jpg">
+        <img src="./images/photo.jpg">
+    </div>
+</body>
+
+</html>

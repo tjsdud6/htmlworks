@@ -1,0 +1,20 @@
+#container{width: 600px; margin: 0px auto;}
+fieldset{margin-bottom: 20px;}
+
+/* list 스타일 */
+ul li{list-style: none;} /*불릿 제거*/
+ul li label{width: 120; float: left;}
+
+/* 텍스트 필드 스타일 */
+ul li {margin: 15px;}
+ul li label{width: 120px; float: left;
+            text-align: right; margin-right: 10px; color: green;}
+ul li input{width: 200px; height: 30px;}
+#umail, #path{width: 120px; height: 30px;}
+#button{text-align: center;}
+#button input{width: 150px; height: 50px; font-size: 20px; margin: 5px;}
+#button input:hover{
+    background: rgb(29, 146, 29);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+}

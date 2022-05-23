@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글자의 단위</title>
+    <style>
+        /* 기본 - 16px
+            rem은 16px에 곱하는 단위
+            em은 부모 태그의 크기에 곱하는 단위 
+            2em = 2 * 12 = 24px;
+            2rem = 2 * 16 = 32px;
+            */
+        ul{font-size: 12px;}
+
+        /* em은 부모 값에 곱셈 */
+        li{font-size: 2em;}
+
+        /* rem은 무조건 16px에 곱셈 */
+        li:nth-child(4){font-size: 2rem;}
+
+    </style>
+</head>
+<body>
+    <p>오늘의 진료는 본관에서 실시합니다.</p>
+    <ul>
+        <li>내과</li>
+        <li>이비인후과</li>
+        <li>정형외과</li>
+        <li>피부과</li>
+    </ul>
+</body>
+</html>

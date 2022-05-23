@@ -1,0 +1,9 @@
+ul{
+    list-style: none;
+    line-height: 2em;
+}
+.subject{
+    color: #ad3000;
+    font-size: 20px;
+    font-weight: bold;
+}

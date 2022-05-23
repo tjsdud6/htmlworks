@@ -1,0 +1,79 @@
+*{margin: 0; padding: 0;}
+#contaniner{width: 100%; margin: 0 auto;}
+main{width: 1000px; margin: 30px auto;}
+
+/* headr 영역 */
+header{height: 80px; background: rgb(2, 56, 2);}
+#logo{width: 300px; float: left; padding: 15px 30px;}
+#logo a{color: yellow; text-decoration: none;}
+nav{width: 800px; float: right;}
+#topMenu{list-style: none; text-align: right; 
+    margin-right: 50px; padding: 15px 20px;}
+#topMenu li{display: inline-block; margin: 10px 20px;}
+#topMenu li a{color: #fff; text-decoration: none;}
+#topMenu li a:hover {color: khaki ; text-decoration: none;}
+
+/* index 스타일 */
+/* #contents{width: 1000px; margin: 30px auto;} */
+#contents #healing, #activity{margin: 30px 10px;}
+#contents h2{margin-bottom: 20px;}
+#contents p{line-height: 2em;}
+#healing img, #activity img{float: left; margin-right: 20px; 
+    border-radius: 20px;}
+#healing, #activity {height: 300px;}
+#healing .schedule ul li{list-style: none; margin: 0 5px;}
+#healing h3{margin: 20px 0 10px;}
+#sightseeing ul li{margin: 10px 30px;}
+#sightseeing li a {text-decoration: none; color: #333;}
+#sightseeing li a:hover {color: rgb(141, 132, 49);}
+
+
+
+/* footer 영역 */
+footer{width: 1000px; margin: 30px auto;
+    border-top: 2px solid #222;}
+#bottomMenu{list-style: none; margin: 10px 10px 10px 30px;}
+#bottomMenu li{display: inline-block; margin: 10px 0;
+border-right: 1px solid #ccc; padding: 0 10px;}
+#bottomMenu li:last-child{border: none;}
+#bottomMenu li a{text-decoration: none; color: #333;}
+
+
+/* product 스타일 */
+/* #product{width: 1000px; margin: 30px auto;} */
+#product p, li{line-height: 2;}
+#product h2{margin: 10px;}
+#description{
+    width: 800px; margin: 0 auto; border: solid #ccc;
+    padding:20px 60px; margin-bottom: 20px; 
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;}
+#description img{ border-radius: 5px; margin: 10px;}
+#receipe{width: 800px; margin: 0 auto; border: solid #ccc;
+    padding:20px 60px; margin-bottom: 20px;}
+#receipe ol{padding-left: 20px;}
+#package{width: 800px; margin: 0 auto; border: solid #ccc;
+    padding:20px 60px; margin-bottom: 20px;
+    border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;}
+#product table,th, td{border: 1px solid #ccc;
+    border-collapse: collapse; padding: 10px 20px}
+
+/* board 스타일 */
+#board #qa{height: 600px;}
+#board h2{margin: 30px 10px;}
+#tbl_board{width: 800px; border-collapse: collapse;
+    margin-left: 40px; text-align: center;}
+#tbl_board th, #tbl_board td{border: 1px solid #ccc;}
+#tbl_board thead{background: #eee;}
+
+/* Profile 스타일 */
+#intro {height: 570px;}
+#profile h1{margin-left: 30%; margin-bottom: 20px;}
+#profile h2{color: rgb(13, 14, 13); margin: 10px 0px;
+    text-shadow: 2px 2px rgba(209, 91, 245, 0.5);}
+#profile img{ margin-left: 35%; border: 1px solid #000;margin-bottom: 20px;}
+#profile p, #profile li a{line-height: 2em;}
+#intro-box1, #profile #page{height: 100px;}
+#page a{text-decoration: none; color: #333; margin-left: 15px;}
+#page a:hover{color: lightcoral;}
+#profile ul li{margin-left: 20px;}

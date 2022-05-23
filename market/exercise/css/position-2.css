@@ -1,0 +1,15 @@
+*{margin: 0; padding: 0;}
+#contents{
+    margin: 0 auto;
+    background: url(../images/bg.jpg) no-repeat;
+    width: 640px;
+    height: 430px;
+    position: relative;
+}
+#contents h1{
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+    color: #fff;
+    font-size: 100px;
+}

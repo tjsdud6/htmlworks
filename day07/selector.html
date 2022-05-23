@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        /* 모든 후손 태그에 적용됨 
+            p{color: blue;} */
+
+        /* 자식 태그에 적용됨 
+            section > p{color: #00f;} */
+
+        /* 인접 형재 태그에 적용 됨 */
+        h1 + p{
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>예약 방법 & 사용 요금</h1>
+        <p>아직 온라인 예약 신청이 준비되어 있지 않습니다.</p>
+        <p>펜션 객실 안내</p>
+        <div>
+            <p>크리스탈 : 60,000원</p>
+            <p>루비 : 75,000원</p>
+    </div>
+    </section>
+</body>
+</html>

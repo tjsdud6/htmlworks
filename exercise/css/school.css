@@ -1,0 +1,13 @@
+table{
+    width: 500px;
+    border-collapse: collapse;
+    text-align: center;
+    /* caption-side: bottom; */
+    /* 캡션의 위치 - bottom(아래쪽) */
+}
+tr, td{
+    border: 1px solid #ccc;
+    height: 30px;
+}
+thead, tfoot{background-color: #eee;}
+caption{margin: 10px;}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        p{
+            width: 100px; height: 100px;
+            padding: 10px; background: firebrick;
+            /* animation-name: sample; */
+            /* animation-duration: 4s; */
+            /* animation-fill-mode: forwards; */
+            /* animation-iteration-count: infinite; */
+
+            animation: sample 4s forwards;
+
+        }
+
+        @keyframes sample {
+            0%{background: firebrick; 
+                -webkit-transform:translate(0, 0);
+                 transform: translate(0, 0);}
+            50%{background: cornflowerblue;
+                -webkit-transform:translate(50px, 20px);
+                transform: translate(50px, 20px);}
+            0%{background: firebrick; 
+                -webkit-transform:translate(0, 0);
+                transform: translate(0, 0);}
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Animation...
+    </p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 메뉴</title>
+    <style>
+        /* 부모태그(parent) "" 공백으로 띄우면 후손까지 적용(모두 적용) 
+           '>' 를 사용하면 자식(child)까지만 적용 
+           body ul (모두적용) 과 body > ul(자식까지만 적용) */
+        body > ul{
+            list-style: square;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li ><a href="#">메뉴1</a>
+            <ul> <!--메뉴 1의 서브메뉴-->
+                <li><a href="#">메뉴 1_1</a></li>
+                <li><a href="#">메뉴 1_2</a></li>
+                <li><a href="#">메뉴 1_3</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li ><a href="#">메뉴2</a>
+            <ul> <!--메뉴 2의 서브메뉴-->
+                <li><a href="#">메뉴 2_1</a></li>
+                <li><a href="#">메뉴 2_2</a></li>
+                <li><a href="#">메뉴 2_3</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li ><a href="#">메뉴3</a>
+            <ul> <!--메뉴 3의 서브메뉴-->
+                <li><a href="#">메뉴 3_1</a></li>
+                <li><a href="#">메뉴 3_2</a></li>
+                <li><a href="#">메뉴 3_3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/* 레이아웃 - position 적용 */
+body, h1, h2, ul, li, p{margin: 0; padding: 0;}
+li{list-style: none;}
+a{color: #000;}
+.box_inner{width: 700px; margin: 0 auto;}
+.skipnavi{
+    position: absolute;
+    left: 0; top: -50px;
+    width: 100%;
+    z-index: 99; /* 필수적으로 위로 올림 */
+    font-size: 0;
+}
+.skipnavi li a:focus, 
+.skipnavi li a:active{
+    position: absolute;
+    left: 0; top: 50px;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold; background: #f2f2f2;
+} 
+#container{top: 20px;}
+header{background: #357;}
+h1{font-size: 25px; color: #cc0; padding: 10px;}
+h1::first-letter{font-size: 1em;}
+h1 strong{color: #ffd;}
+h1 em{font-style: normal; font-size: 1.5em;
+    color: #fff;}
+
+#container{position: relative; /*부모*/}
+.gnb{
+    position: absolute; /*자식*/
+    left: 0; top: 0;
+}
+.gnb li {padding: 5px 0 ;}
+.gnb li a:hover{color: crimson;}
+.content{ 
+    position: relative;
+    left: 200px;
+    width: 500px;
+}
+.content p{line-height: 1.3em;}
+h2{padding: 10px 20px; color: crimson;}
+p{padding: 20px; text-align: justify;}
+footer{background: #aaa;}
+footer p{padding: 10px;}

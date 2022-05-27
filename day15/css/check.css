@@ -1,0 +1,18 @@
+.css-checkbox{
+    border:none; background: none;
+    /* 이전 체크박스 숨기기 */
+    position: absolute; left: -999px;
+}
+.css-checkbox + label{
+    display: inline-block;
+    padding : 0 0 0 30px;
+    height: 20px; line-height: 20px;
+    background: url(../img/bg_checkbox.png) no-repeat 0 0;
+    /* 원래 크기보다 2/3 줄임 */
+    background-size: 20px 40px;
+    vertical-align: middle;
+}
+    /* 마우스로 체크되면 이미지가 20px 위로 올라감 */
+.css-checkbox:checked + label{
+    background-position: 0 -20px;
+}

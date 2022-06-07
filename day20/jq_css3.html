@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> jQuery - css() </title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td{
+            border : 1px solid #333;
+        }
+        li{
+            color: white;
+            margin: 5px;
+        }
+    </style>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("tr:even").css("background", "red"); // 홀수번째
+            $("tr:odd").css("background", "orange"); // 짝수번째
+            $("td:first").css("background", "yellow"); // 첫번째
+            $("td:last").css("background", "green"); // 마지막
+            $(":header").css("background", "blue"); // h1 ~ h6 전체 적용
+            $("li:eq(0)").css("background", "navy"); // eq(0) : 0번 인덱스 선택
+            $("li:gt(0)").css("background", "purple"); // gt(0) : 0번 인덱스 이후 적용
+            $("li:lt(3)").css("border", "4px solid gray"); // lt(3) : 인덱스 번호가 3보다 작은 것들에 적용
+            $(":root").css("background", "lightgray"); // html 전체에 적용
+            (function upDown(){
+                // 실행 함수 : $(선택자).css(속성, 값);
+                $("h2").slideToggle(2000, upDown); // 열리고 닫히는 효과
+            })(); // 마지막 ()이 없으면 즉시 실행되지 않음
+            $(":animated").css("border", "4px solid darkred"); // :animated : 애니메이션 중인 것들에 적용
+        })
+
+    </script>
+</head>
+<body>
+    <h1>제목1</h1>
+    <h2>제목2</h2>
+    <table>
+        <caption>기본 필터 선택자</caption>
+        <colgroup>
+        <col>
+        <col>
+        <col>
+        </colgroup>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    </tbody>
+    </table>
+    <ul>
+        <li class="bg">내용1</li>
+        <li class="bg">내용2</li>
+        <li class="bg">내용3</li>
+    </ul>
+</body>
+</html>

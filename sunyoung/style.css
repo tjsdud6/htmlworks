@@ -7,7 +7,7 @@ header{height: 70px; background: rgb(255, 89, 114); }
 nav{position: fixed; top: 35px; right: 500px;}
 #topMenu li{display: inline-block;}
 nav ul li:nth-child(1){color: blue;}
-#topMenu li a{padding: 50px; text-decoration: none; color: #000;}
+#topMenu li a{padding: 30px; text-decoration: none; color: #000;}
 #topMenu li a:hover{color: rgb(252, 252, 252)}
 
 #toplogin {position: fixed; top: 5px; right: 30px;}
@@ -15,3 +15,8 @@ nav ul li:nth-child(1){color: blue;}
 #toplogin a{text-decoration: none; padding: 10px; color: rgb(255, 255, 255);}
 #toplogin a:hover{color: rgb(245, 196, 140);}
 /* contents 영역 */
+
+#address h2{margin: 10px 150px;}
+#address .search {position: relative; width: 300px;}
+#address input {width: 100%; border: 1px solid #bbb; border-radius: 8px; padding: 10px 12px; font-size: 14px; margin-left: 10px;}
+#address img {position : absolute; width: 17px; top: 10px; right: 3px; margin: 0;}

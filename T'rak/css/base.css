@@ -41,6 +41,17 @@ h3{margin-top: 40px; text-align: center;}
             border-radius: 20px; border: 0; outline: 0;}
 
 
+#tabMenu input[type="radio"]{display: none;}
+#tabMenu label{display: inline-block; margin: 0; padding: 15px 25px; 
+    text-align: center; color: #aaa; border: 1px solid transparent;}
+#tabMenu label:hover {color: #222; cursor: pointer;}
+#tabMenu input:checked + label{color: #000; text-decoration: underline;}
+.tabContent{display: none; padding: 20px 0 0; border-top: 1px solid #ddd;}
+#contect p, #blocking p{list-style: square; margin-left: 30px; font-size: 16px; line-height: 2.5;}
+#blocking p{display: inline;}
+#tab1:checked ~ #contect, 
+#tab2:checked ~ #blocking{display: block;}
+#btn_block{}
 
 
 
@@ -65,5 +76,5 @@ header .login{width: 70%;}
 header .login{width: 30%; position: relative;}
 header .matAlarm{display: none;} 
 .login ul li:nth-child(2), .login ul li:nth-child(3), .login ul li:nth-child(4){display: none;}
-#google p, #t-tel p{text-align: center; font-size: 16px; font-weight: 700;}
+#google p, #t-tel p{text-align: center; font-size: 15px; font-weight: 700;}
 }
